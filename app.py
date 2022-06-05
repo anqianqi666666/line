@@ -38,9 +38,15 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
+    r = "哈哈哈哈哈哈"
+
+    if msg == '哈':
+        r == '嘿'
+    elif msg == '呀':
+        r == '耶'
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='你今天開心嗎?'))
+        TextSendMessage(text=r))
 
 
 if __name__ == "__main__":
