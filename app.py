@@ -41,9 +41,9 @@ def handle_message(event):
     r = "哈哈哈哈哈哈"
 
     if msg == '哈':
-        r == '嘿'
+        r = '嘿'
     elif msg == '呀':
-        r == '耶'
+        r = '耶'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
